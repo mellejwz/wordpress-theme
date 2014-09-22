@@ -56,13 +56,11 @@ html, body{
 	width: 58%;
 	padding: 1%;
 	float: left;
-	position: absolute;
 	border-radius: 0px 0px 0px 10px;
 }
 #widgets{
 	width: 40%;
-	position: absolute;
-	right: 0px;
+	float: left;
 }
 .widget{
 	height: 50px;
