@@ -33,8 +33,7 @@ html, body{
 }
 #header h1{
 	display: inline-block;
-	margin: 0;
-	padding: 0;
+	margin: 0 0 0 10px;
 }
 
 #normal_menu{

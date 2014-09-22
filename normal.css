@@ -55,7 +55,7 @@ html, body{
 #content{
 	width: 68%;
 	padding: 1%;
-	float: left
+	float: left;
 }
 /*widgets*/
 #widgets{
