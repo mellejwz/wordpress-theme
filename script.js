@@ -1,8 +1,8 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 	$('.menu-item').mouseover(function(){
-		$(this).animate({marginTop: "-=10"}, 500);
+		$(this).animate({paddingTop: "+=10"}, 500);
 	});
 	$('.menu-item').mouseout(function(){
-		$(this).animate({marginTop: "+=10"}, 500);
+		$(this).animate({paddingTop: "-=10"}, 500);
 	});
-});
+});*/
