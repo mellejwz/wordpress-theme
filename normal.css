@@ -2,34 +2,47 @@ html, body{
 	margin: 0;
 	padding: 0;
 }
-
+/*hide elements not relevant for current mode*/
+#mobile_menu{
+	display: none;
+}
+.mobile_menu-button{
+	position: absolute;
+	top: -50px;
+}
+.mobile_menu-button_clicked{
+	position: absolute;
+	top: -50px;
+}
+/*container for all the elements*/
 #container{
 	width: 75%;
 	margin: 0 auto;
-	position: relative;
 }
+/*header and menu*/
 #header{
 	width: 100%;
-	height: 160px;
-	background-image: url('header.jpg');
-	position: relative;
+	margin: 0 0 10px 0;
 }
 #header img{
-	margin: 5px 0px 0px 5px;
+	margin: 0 10px 0 0;
 	background-image: url('logo.png');
 	width: 75px;
 	height: 75px;
+	margin: 0;
+	padding: 0;
 }
-#menu{
-	min-height: 30px;
+#header h1{
+	display: inline-block;
+	margin: 0 0 0 10px;
+}
+#normal_menu{
 	width: 100%;
-	position: absolute;
 	padding: 0;
 	margin: 0;
-	bottom: 0px;
 	background-color: rgba(200, 200, 200, 0.4);
 }
-.menu-item{
+.normal_menu-item{
 	height: 26px;
 	padding: 2px;
 	margin: 0px 5px 0px 5px;
@@ -38,22 +51,19 @@ html, body{
 	cursor: pointer;
 	font-weight: bold;
 }
+/*content*/
 #content{
 	width: 68%;
 	padding: 1%;
-	background-color: red;
-	float: left;
-	position: absolute;
+	float: left
 }
+/*widgets*/
 #widgets{
 	width: 30%;
-	background-color: blue;
-	position: absolute;
-	right: 0px;
+	float: left;
 }
 .widget{
-	width: 100%;
 	height: 50px;
-	background-color: yellow;
+	border: 2px solid #000;
 	margin-bottom: 1px;
 }
