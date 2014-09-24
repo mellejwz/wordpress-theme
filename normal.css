@@ -1,11 +1,10 @@
 html, body{
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	overflow: hidden;
 }
 /*hide elements not relevant for current mode*/
-#mobile_menu{
-	display: none;
-}
 .mobile_menu-button{
 	position: absolute;
 	top: -50px;
@@ -17,12 +16,17 @@ html, body{
 /*container for all the elements*/
 #container{
 	width: 75%;
+	height: 100%;
 	margin: 0 auto;
+	position: relative;
 }
 /*header and menu*/
 #header{
-	width: 100%;
+	width: 75%;
+	height: 120px;
 	margin: 0 0 10px 0;
+	position: fixed;
+	background-color: rgba(200, 200, 200, 0.4);
 }
 #header img{
 	margin: 0 10px 0 0;
@@ -36,31 +40,36 @@ html, body{
 	display: inline-block;
 	margin: 0 0 0 10px;
 }
-#normal_menu{
+#menu{
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background-color: rgba(200, 200, 200, 0.4);
 }
-.normal_menu-item{
+.menu-item{
 	height: 26px;
 	padding: 2px;
 	margin: 0px 5px 0px 5px;
-	display: block;
-	float: left;
+	display: inline-block;
 	cursor: pointer;
 	font-weight: bold;
 }
 /*content*/
 #content{
 	width: 68%;
+	position: absolute;
+	top: 120px;
+	bottom: 0;
+	overflow: auto;
 	padding: 1%;
-	float: left;
 }
 /*widgets*/
 #widgets{
 	width: 30%;
-	float: left;
+	position: absolute;
+	top: 120px;
+	bottom: 0px;
+	right: 0px;
+	overflow: auto;
 }
 .widget{
 	height: 50px;

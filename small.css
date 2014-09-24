@@ -1,10 +1,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
-}
-#normal_menu{
-	display: none;
+	overflow: hidden;
 }
 
 #container{
@@ -20,15 +17,6 @@ html, body{
 	background-color: rgba(3, 3, 3, 0.1);
 }
 #logo{
-	margin: 5px 5px 0px 0px;
-	background-image: url('logo_medium.png');
-	width: 50px;
-	height: 50px;
-	border: none;
-	position: absolute;
-	right: 0px;
-}
-#logo_clicked{
 	margin: 5px 5px 0px 0px;
 	background-image: url('logo_medium.png');
 	width: 50px;
@@ -55,16 +43,21 @@ html, body{
 	font-size: 40px;
 	padding: 5px;
 }
-#mobile_menu{
-	width: 200px;
+#menu{
+	width: 50%;
+	height: 50%;
 	padding: 0;
 	margin: 0;
+	background-color: rgba(3, 3, 3, 0.1);
 	position: fixed;
 	top: 0;
+	left: 0;
+	overflow-y: auto;
+	z-index: -10;
 }
-.mobile_menu-item{
+.menu-item{
 	height: 26px;
-	padding: 2px;
+	padding: 0;
 	margin: 0px 5px 0px 5px;
 	display: block;
 	cursor: pointer;
@@ -73,18 +66,25 @@ html, body{
 }
 #content{
 	padding: 1%;
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+	overflow: auto;
 }
 #widgets{
-	width: 200px;
+	width: 50%;
+	height: 50%;
 	padding: 0;
 	margin: 0;
 	position: fixed;
-	right: 0;
-	top: 0;
+	background-color: rgba(3, 3, 3, 0.1);
+	left: 0;
+	bottom: 0;
 	z-index: -10;
+	overflow-y: auto;
 }
 .widget{
-	height: 50px;
-	border: 2px solid #000;
-	margin-bottom: 1px;
+	margin: 1px;
+	padding: 2px;
+	background-color: rgba(3, 3, 3, 0.1);
 }

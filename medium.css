@@ -3,9 +3,6 @@ html, body{
 	padding: 0;
 }
 /*hide elements not relevant for current mode*/
-#mobile_menu{
-	display: none;
-}
 .mobile_menu-button{
 	position: absolute;
 	top: -50px;
@@ -14,35 +11,35 @@ html, body{
 	position: absolute;
 	top: -50px;
 }
-
+/*container for all the elements*/
 #container{
-	width: 75%;
+	width: 90%;
 	margin: 0 auto;
-	position: relative;
 }
-
+/*header and menu*/
 #header{
 	width: 100%;
 	margin: 0 0 10px 0;
+	background-color: rgba(200, 200, 200, 0.4);
 }
 #header img{
 	margin: 0 10px 0 0;
-	background-image: url('logo_medium.png');
-	width: 50px;
-	height: 50px;
+	background-image: url('logo.png');
+	width: 75px;
+	height: 75px;
+	margin: 0;
+	padding: 0;
 }
 #header h1{
 	display: inline-block;
 	margin: 0 0 0 10px;
 }
-
-#normal_menu{
+#menu{
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background-color: rgba(200, 200, 200, 0.4);
 }
-.normal_menu-item{
+.menu-item{
 	height: 26px;
 	padding: 2px;
 	margin: 0px 5px 0px 5px;
@@ -51,12 +48,13 @@ html, body{
 	cursor: pointer;
 	font-weight: bold;
 }
+/*content*/
 #content{
 	width: 58%;
 	padding: 1%;
 	float: left;
-	border-radius: 0px 0px 0px 10px;
 }
+/*widgets*/
 #widgets{
 	width: 40%;
 	float: left;
