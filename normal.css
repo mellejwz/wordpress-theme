@@ -3,6 +3,10 @@ html, body{
 	padding: 0;
 	height: 100%;
 	overflow: hidden;
+	background-image: url('ksp.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 /*hide elements not relevant for current mode*/
 .mobile_menu-button{
@@ -26,7 +30,7 @@ html, body{
 	height: 120px;
 	margin: 0 0 10px 0;
 	position: fixed;
-	background-color: rgba(200, 200, 200, 0.4);
+	background-color: rgba(200, 200, 200, 0.5);
 }
 #header img{
 	margin: 0 10px 0 0;
@@ -55,24 +59,28 @@ html, body{
 }
 /*content*/
 #content{
-	width: 68%;
 	position: absolute;
-	top: 120px;
+	left: 0;
+	right: 225px;
+	top: 125px;
 	bottom: 0;
 	overflow: auto;
 	padding: 1%;
+	background-color: rgba(200, 200, 200, 0.5);
 }
 /*widgets*/
 #widgets{
-	width: 30%;
+	width: 220px;
 	position: absolute;
-	top: 120px;
+	right: 0;
+	top: 125px;
 	bottom: 0px;
 	right: 0px;
 	overflow: auto;
+	background-color: rgba(200, 200, 200, 0.5);
 }
 .widget{
-	height: 50px;
+	height: 100px;
 	border: 2px solid #000;
 	margin-bottom: 1px;
 }
