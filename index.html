@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="jquery-ui.js"></script>
 	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" media="screen and (max-width: 480px)" href="small.css" />
 	<link rel="stylesheet" media="screen and (min-width: 480px) and (max-width:768px)" href="medium.css" />
 	<link rel="stylesheet" media="screen and (min-width: 768px)" href="normal.css" />
@@ -15,7 +17,7 @@
 		<div id="header"><img id="logo" /><h1>Wordpress thema</h1>
 			<div class="mobile_menu-button">&#9776;</div>
 			<div class="mobile_menu-button_clicked">&#9776;</div>
-			<ul id="menu">
+			<ul class="menu">
 				<li class="menu-item">menu1</li>
 				<li class="menu-item">menu2</li>
 				<li class="menu-item">menu3</li>
@@ -23,7 +25,6 @@
 				<li class="menu-item">menu5</li>
 				<li class="menu-item">menu6</li>
 			</ul>
-			<div style="clear: both"></div>
 		</div>
 		<div id="content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -77,7 +78,7 @@
 			<div class="widget">widget</div>
 			<div class="widget">widget</div>
 		</div>
-		<div style="clear: both"></div>
+		<div id="footer"></div>
 	</div>
 </body>
 </html>
